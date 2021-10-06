@@ -28,9 +28,9 @@
         var parkData;
         var restData;
         var serviceData;
-        Promise.all([d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/NYC%20Parks%20Dog%20Runs.geojson"), 
-                     d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/dog_restaurant_NYC.geojson"), 
-                     d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/dog_service_vet_NYC.geojson")])
+        Promise.all([d3.json("https://github.com/ZiweiLing/InteractiveMap.github.io/master/NYC%20Parks%20Dog%20Runs.geojson"), 
+                     d3.json("https://github.com/ZiweiLing/InteractiveMap.github.io/blob/master/dog_restaurant_NYC.geojson"), 
+                     d3.json("https://github.com/ZiweiLing/InteractiveMap.github.io/master/dog_service_vet_NYC.geojson")])
                 .then(function(data){
                     // console.log(data)
                         parkData = data[0];
@@ -40,8 +40,7 @@
                 });
                
    function drawMap(parkData, restData, serviceData){ map.on('load', function () {
-        map.loadImage('https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/pawprint.png', 
-                      function (error, image) {//we load the image icon as we did in the previous file
+        map.loadImage('https://github.com/ZiweiLing/InteractiveMap.github.io/master/pawprint.png', function (error, image) {//we load the image icon as we did in the previous file
             map.addImage('dog', image);
 
             map.addLayer({
@@ -90,7 +89,7 @@
         });
         })
         
-        map.loadImage('https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/dog-food.png', function (error, image) {//we load the image icon as we did in the previous file
+        map.loadImage('https://github.com/ZiweiLing/InteractiveMap.github.io/master/dog-food.png', function (error, image) {//we load the image icon as we did in the previous file
             map.addImage('restaurant', image);
 
             map.addLayer({
@@ -138,7 +137,7 @@
                 });
         })
 
-            map.loadImage('https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/aid.png', function (error, image) {//we load the image icon as we did in the previous file
+            map.loadImage('https://github.com/ZiweiLing/InteractiveMap.github.io/master/aid.png', function (error, image) {//we load the image icon as we did in the previous file
             map.addImage('aid', image);
 
             map.addLayer({
