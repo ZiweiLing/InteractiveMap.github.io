@@ -1,4 +1,3 @@
-<<<<<<< HEAD
         //1.bounds and map
         var bounds = [
             [-74.04728500751165, 40.68392799015035], // Southwest coordinates
@@ -310,7 +309,7 @@
     var layers = document.getElementById('menu');
     layers.appendChild(link);
 }
-=======
+
         //1.bounds and map
         var bounds = [
             [-74.04728500751165, 40.68392799015035], // Southwest coordinates
@@ -622,4 +621,4 @@
     var layers = document.getElementById('menu');
     layers.appendChild(link);
 }
->>>>>>> 3f10b474ae50786443ea26b06543b1a3f9538f99
+
