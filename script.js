@@ -28,7 +28,7 @@
         var parkData;
         var restData;
         var serviceData;
-        Promise.all([d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/NYC%20Parks%20Dog%20Runs.geojson"), 
+        Promise.all([d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/NYC_Parks_Dog_Runs.geojson"), 
                      d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/dog_restaurant_NYC.geojson"), 
                      d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/dog_service_vet_NYC.geojson")])
                 .then(function(data){
