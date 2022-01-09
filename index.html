@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -181,9 +181,11 @@
 </head>
 <nav id="menu"></nav>
 
-<!-- <body id="body"> -->
-    <!-- <div id='map'></div> -->
+<!-- <body id="body">
+    <div id='map'></div> -->
+
     <body data-gr-c-s-loaded="true" class="standardMode">
+
         <div id="scroll">
             <div class="scroll__graphic">
                 <div id="leftBox">
@@ -339,7 +341,7 @@
             var restData;
             var serviceData;
             var dataall = [];
-            Promise.all([d3.json("https://raw.githubusercontent.com/ZiweiLing/InteractiveMap.github.io/master/NYC_Parks_Dog_Runs.geojson"), 
+            Promise.all([d3.json("https://raw.githubusercontent.com/ZiweiLing/ZiweiLing.github.io/master/NYC_Parks_Dog_Runs.geojson"),
                         d3.json("https://raw.githubusercontent.com/ZiweiLing/ZiweiLing.github.io/master/dog_restaurant_NYC.geojson"),
                         d3.json("https://raw.githubusercontent.com/ZiweiLing/ZiweiLing.github.io/master/dog_service_vet_NYC.geojson")])
                 .then(function (data) {
@@ -606,4 +608,5 @@
         </script>
 
     </body>
+
 </html>
