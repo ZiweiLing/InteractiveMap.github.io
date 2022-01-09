@@ -341,7 +341,7 @@
             var restData;
             var serviceData;
             var dataall = [];
-            Promise.all([d3.json("https://raw.githubusercontent.com/ZiweiLing/ZiweiLing.github.io/master/NYC%20Parks%20Dog%20Runs.geojson"), d3.json("https://raw.githubusercontent.com/ZiweiLing/ZiweiLing.github.io/master/dog_restaurant_NYC.geojson"), d3.json("https://raw.githubusercontent.com/ZiweiLing/ZiweiLing.github.io/master/dog_service_vet_NYC.geojson")])
+            Promise.all([d3.json("https://github.com/ZiweiLing/InteractiveMap.github.io/blob/c1bcb138b8aa8f5472e2b4215355673ce51c59b9/NYC%20Parks%20Dog%20Runs.geojson"), d3.json("https://github.com/ZiweiLing/InteractiveMap.github.io/blob/c1bcb138b8aa8f5472e2b4215355673ce51c59b9/dog_restaurant_NYC.geojson"), d3.json("https://github.com/ZiweiLing/InteractiveMap.github.io/blob/c1bcb138b8aa8f5472e2b4215355673ce51c59b9/dog_service_vet_NYC.geojson")])
                 .then(function (data) {
                     // console.log(data)
                     parkData = data[0];
